@@ -1,0 +1,133 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Net;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+using System.Xml.Serialization;
+using System.Xml.XPath;
+using System.Xml.Xsl;
+using DelaunatorSharp;
+using Gilzoide.ManagedJobs;
+using Ionic.Crc;
+using Ionic.Zlib;
+using JetBrains.Annotations;
+using KTrie;
+using LudeonTK;
+using NVorbis.NAudioSupport;
+using RimWorld;
+using RimWorld.BaseGen;
+using RimWorld.IO;
+using RimWorld.Planet;
+using RimWorld.QuestGen;
+using RimWorld.Utility;
+using RuntimeAudioClipLoader;
+using Unity.Burst;
+using Unity.Collections;
+using Unity.Jobs;
+using UnityEngine;
+using UnityEngine.Jobs;
+using UnityEngine.Profiling;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+using Verse;
+using Verse.AI;
+using Verse.AI.Group;
+using Verse.Grammar;
+using Verse.Noise;
+using Verse.Profile;
+using Verse.Sound;
+using Verse.Steam;
+
+namespace NAT
+{
+	public class LayoutWorker_CollectorLair : LayoutWorker_Structure
+	{
+
+		private static readonly IntRange ItemRange = new IntRange(3, 6); 
+		public LayoutWorker_CollectorLair(LayoutDef def)
+			: base(def)
+		{
+		}
+
+        public override void Spawn(LayoutStructureSketch layoutStructureSketch, Map map, IntVec3 pos, float? threatPoints = null, List<Thing> allSpawnedThings = null, bool roofs = true, bool canReuseSketch = false, Faction faction = null)
+        {
+            base.Spawn(layoutStructureSketch, map, pos, threatPoints, allSpawnedThings, roofs, canReuseSketch, faction);
+			if (map.PocketMapParent.sourceMap.Parent is Site site && site.parts[0].parms is CollectorLairParams parms)
+            {
+				QuestPart_Collector questPart_Collector = parms.questPart;
+				questPart_Collector.cases = new List<Building_CollectionCase>();
+                List<CellRect> list = new List<CellRect>();
+				foreach(var room in layoutStructureSketch.structureLayout.Rooms)
+                {
+                    if (room.HasLayoutDef(NATHDDefOf.NAT_CollectionRoom))
+                    {
+						list.Add(room.rects[0].ContractedBy(2));
+                    }
+				}
+				ThingSetMakerParams setParms = new ThingSetMakerParams
+				{
+					makingFaction = Faction.OfEntities,
+					tile = map.Tile
+				};
+                List<Thing> loot = NATHDDefOf.NAT_CollectoirLairCase.root.Generate(setParms);
+				questPart_Collector.stolenThings.AddRange(loot);
+                IntVec2 size = NATHDDefOf.NAT_CollectorGlassCase.size;
+				List<Pawn> pawns = questPart_Collector.stolenPawns.ToList();
+                foreach (Building_CollectionCase glassCase in map.listerBuildings.AllBuildingsNonColonistOfDef(NATHDDefOf.NAT_CollectorGlassCase).InRandomOrder())
+				{
+                    if (!pawns.NullOrEmpty())
+                    {
+                        glassCase.pawn = pawns.RandomElement();
+						pawns.Remove(glassCase.pawn);
+                    }
+					else if (!questPart_Collector.stolenThings.NullOrEmpty())
+					{
+                        for (int i = 0; i < ItemRange.RandomInRange; i++)
+                        {
+							if(questPart_Collector.stolenThings.TryRandomElement(out var thing))
+							{
+								glassCase.innerContainer.TryAddOrTransfer(thing);
+								questPart_Collector.stolenThings.Remove(thing);
+                            }
+                        }
+                    }
+					else
+					{
+						glassCase.Destroy();
+						continue;
+                    }
+					questPart_Collector.cases.Add(glassCase);
+                    glassCase.questPart = questPart_Collector;
+                }
+				parms.questPart = null;
+				questPart_Collector.Notify_LairGenerated();
+            }
+        }
+
+        protected override StructureLayout GetStructureLayout(StructureGenParams parms, CellRect rect)
+		{
+			return RoomLayoutGenerator.GenerateRandomLayout(parms.sketch, rect, minRoomHeight: base.Def.minRoomHeight, minRoomWidth: base.Def.minRoomWidth, areaPrunePercent: 0.25f, canRemoveRooms: true, generateDoors: false, corridor: null, corridorExpansion: 2, maxMergeRoomsRange: new IntRange(2, 4), corridorShapes: CorridorShape.All, canDisconnectRooms: false);
+		}
+
+		protected override void PostGraphsGenerated(StructureLayout layout, StructureGenParams parms)
+		{
+			foreach (LayoutRoom room in layout.Rooms)
+			{
+				room.noExteriorDoors = true;
+			}
+		}
+	}
+}

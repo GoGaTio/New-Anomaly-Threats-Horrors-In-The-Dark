@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThinkTreeDef>
+    <defName>NAT_Phasepasser</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+
+        <!-- Downed -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+
+        <li Class="NAT.JobGiver_AIPhaseAttack" />
+        <li Class="NAT.JobGiver_PhaseWander" />
+
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
+  <ThinkTreeDef>
+    <defName>NAT_PhasepasserConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+
+        <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+          <subNodes>
+            <li Class="ThinkNode_HarmedRecently">
+              <subNodes>
+                <li Class="ThinkNode_ConditionalHasAbility">
+                  <ability>NAT_CollectorHowl</ability>
+                  <subNodes>
+                    <li Class="NAT.ThinkNode_ConditionalNotHasJobDef">
+                      <def>NAT_CollectorStealPawn</def>
+                      <subNodes>
+                        <li Class="ThinkNode_ConditionalTotalDamage">
+                          <thresholdPercent>0.10</thresholdPercent>
+                          <subNodes>
+                            <li Class="JobGiver_AICastAbilityOnSelf">
+                              <ability>NAT_CollectorHowl</ability>
+                            </li>
+                          </subNodes>
+                        </li>
+                      </subNodes>
+                    </li>
+                  </subNodes>
+                </li>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

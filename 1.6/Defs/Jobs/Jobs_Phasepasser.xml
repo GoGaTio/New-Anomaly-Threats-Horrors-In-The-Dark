@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <JobDef>
+    <defName>NAT_PhasepasserMoveTo</defName>
+    <driverClass>NAT.JobDriver_MoveIgnoreAnything</driverClass>
+    <reportString>phasing</reportString>
+    <collideWithPawns>false</collideWithPawns>
+    <casualInterruptible>false</casualInterruptible>
+    <playerInterruptible>false</playerInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>NAT_PhasepasserAttack</defName>
+    <driverClass>NAT.JobDriver_PhasepasserAttack</driverClass>
+    <reportString>phasing</reportString>
+    <collideWithPawns>false</collideWithPawns>
+    <casualInterruptible>false</casualInterruptible>
+    <playerInterruptible>false</playerInterruptible>
+  </JobDef>
+
+  <JobDef>
+    <defName>NAT_PhaseGoToAbility</defName>
+    <driverClass>NAT.JobDriver_PhaseGoToAbility</driverClass>
+    <reportString>phasing</reportString>
+    <collideWithPawns>false</collideWithPawns>
+    <casualInterruptible>false</casualInterruptible>
+    <playerInterruptible>false</playerInterruptible>
+  </JobDef>
+  
+
+</Defs>

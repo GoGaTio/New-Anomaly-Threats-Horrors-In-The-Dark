@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <IncidentDef ParentName="AnomalyIncidentBase">
+    <defName>NAT_Collector</defName>
+    <label>event</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>NAT.IncidentWorker_Collector</workerClass>
+    <baseChance>0.1</baseChance>
+    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <minPopulation>1</minPopulation>
+    <minThreatPoints>700</minThreatPoints>
+    <earliestDay>30</earliestDay>
+    <category>ThreatBig</category>
+    <minRefireDays>60</minRefireDays>
+    <hidden>true</hidden>
+  </IncidentDef>
+
+  <IncidentDef ParentName="EntityAttackBase">
+    <defName>NAT_PhasepassersAttack</defName>
+    <label>phasepassers attack</label>
+    <workerClass>NAT.IncidentWorker_PhasepassersAttack</workerClass>
+    <baseChance>0.4</baseChance>
+    <minThreatPoints>600</minThreatPoints>
+    <minAnomalyThreatLevel>1</minAnomalyThreatLevel>
+    <earliestDay>15</earliestDay>
+    <minRefireDays>30</minRefireDays>
+    <hidden>true</hidden>
+  </IncidentDef>
+
+</Defs>

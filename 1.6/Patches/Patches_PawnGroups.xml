@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName = "Entities"]/pawnGroupMakers</xpath>
+    <value>
+      <li>
+        <!-- Phasepassers -->
+        <kindDef>NAT_Phasepassers</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <NAT_Phasepasser>10</NAT_Phasepasser>
+        </options>
+      </li>
+    </value>
+  </Operation>
+
+
+</Patch>

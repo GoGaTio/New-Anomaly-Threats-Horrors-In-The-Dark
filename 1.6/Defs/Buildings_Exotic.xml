@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_CollectorLairEntrance</defName>
+    <label>ancient trapdoor</label>
+    <description>The entrance to an abandoned underground facility. Probably there you would find collector lair.</description>
+    <size>(3,3)</size>
+    <useHitPoints>false</useHitPoints>
+    <thingClass>NAT.UndergroundEntrance</thingClass>
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Closed</texPath>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <fillPercent>0</fillPercent>
+    <passability>Impassable</passability>
+    <holdsRoof>true</holdsRoof>
+    <destroyable>false</destroyable>
+    <building>
+      <isEdifice>true</isEdifice>
+      <deconstructible>false</deconstructible>
+      <isTargetable>false</isTargetable>
+      <isInert>true</isInert>
+      <claimable>false</claimable>
+      <expandHomeArea>false</expandHomeArea>
+    </building>
+    <portal>
+      <pocketMapGenerator>NAT_CollectorLair</pocketMapGenerator>
+      <exitDef>NAT_CollectorLairExit</exitDef>
+      <pocketMapSize>100</pocketMapSize>
+    </portal>
+    <statBases>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="NAT.CompProperties_UndergroundEntrance">
+        <sealTicks>360</sealTicks> 
+        <sealEffect>ConstructDirt</sealEffect> 
+        <layout>NAT_CollectorLair</layout>
+        <canBeSealed>true</canBeSealed>
+        <sealedLabelOverride>buried entrance</sealedLabelOverride>
+        <openedLabelOverride>collector lair entrance</openedLabelOverride>
+        <sealTexPath>Designations/FillCrater</sealTexPath>
+        <sealJobReportOverride>buring {0}</sealJobReportOverride>
+		  <sealGizmoLabel>Bury</sealGizmoLabel>
+		  <sealGizmoDesc>Bury entrance forever.</sealGizmoDesc>
+        <openedGraphicData>
+          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Open</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </openedGraphicData>
+        <sealedGraphicData>
+          <texPath>Things/Building/NAT_CollectorLairEntrance/NAT_CollectorLairEntrance_Sealed</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </sealedGraphicData>
+        <activeTicks>1</activeTicks>
+        <ticksToActivate>300</ticksToActivate>
+        <activateTexPath>UI/Commands/NAT_OpenCollectorLair</activateTexPath> 
+        <jobString>open</jobString> 
+        <activateLabelString>Order trapdoor opening</activateLabelString> 
+        <activateDescString>Order someone to open the trapdoor.</activateDescString> 
+        <guiLabelString>Choose who should open trapdoor.</guiLabelString> 
+        <activatingString>opening trapdoor</activatingString> 
+        <activatingStringPending>opening trapdoor</activatingStringPending>
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist> 
+        <targetingParameters> 
+          <canTargetBuildings>false</canTargetBuildings> 
+          <canTargetAnimals>false</canTargetAnimals> 
+          <canTargetMechs>false</canTargetMechs> 
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns> 
+        </targetingParameters>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_ContentsMapPortal</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="PocketMapExit">
+    <defName>NAT_CollectorLairExit</defName>
+    <label>collector lair exit</label>
+    <description>A ladder which links to the surface above.</description>
+    <size>(3,3)</size>
+    <drawerType>RealtimeOnly</drawerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_CollectorLairExit/NAT_CollectorLairExit</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_DrawAdditionalGraphics">
+        <graphics>
+          <li>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/NAT_CollectorLairExit/NAT_CollectorLairExit_Ladder</texPath>
+            <drawSize>(3,3)</drawSize>
+            <drawOffset>(0, 0.01, 0.7)</drawOffset>
+            <shaderType>Transparent</shaderType>
+          </li>
+        </graphics>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>NAT_CollectorGlassCase</defName>
+    <label>glass case</label>
+    <description>A large spiked vessel. It's surface is slick and turbid, but there is definitely something or someone inside.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/NAT_CollectorGlassCase/NAT_CollectorGlassCase</texPath>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <thingClass>NAT.Building_CollectionCase</thingClass>
+    <pathCost>50</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <soundImpactDefault>GestatorGlassShattered</soundImpactDefault>
+    <building>
+      <roofCollapseDamageMultiplier>0.1</roofCollapseDamageMultiplier>
+      <displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane>
+      <paintable>false</paintable>
+      <deconstructible>false</deconstructible>
+      <repairable>false</repairable>
+      <neverBuildable>true</neverBuildable>
+      <claimable>false</claimable>
+    </building>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <Flammability>0</Flammability>
+    </statBases>
+    <fillPercent>0.8</fillPercent>
+    <size>(3, 3)</size>
+  </ThingDef>
+  
+</Defs>

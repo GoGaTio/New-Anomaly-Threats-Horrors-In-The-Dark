@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Misc -->
+
+  <PawnRenderTreeDef>
+    <defName>NAT_Phasepasser</defName>
+    <root Class="PawnRenderNodeProperties_Parent">
+      <debugLabel>Root</debugLabel>
+      <tagDef>Root</tagDef>
+      <children>
+        <li>
+          <debugLabel>Body</debugLabel>
+          <tagDef>Body</tagDef>
+          <useRottenColor>true</useRottenColor>
+          <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+          <children>
+            <li>
+              <debugLabel>Head</debugLabel>
+              <tagDef>Head</tagDef>
+              <texPath>Things/Pawn/NAT_Phasepasser/NAT_PhasepasserHead</texPath>
+              <workerClass>NAT.PawnRenderNodeWorker_PhasepasserHead</workerClass>
+              <baseLayer>10</baseLayer>
+              <useRottenColor>true</useRottenColor>
+              <drawData>
+                <dataNorth>
+                  <offset>(0, 0, 0.55)</offset>
+                  <layer>-5</layer>
+                </dataNorth>
+                <dataEast><offset>(0.2, 0, 0.55)</offset></dataEast>
+                <dataSouth><offset>(0, 0, 0.55)</offset></dataSouth>
+                <dataWest><offset>(-0.2, 0, 0.55)</offset></dataWest>
+              </drawData>
+            </li>
+            <li>
+              <debugLabel>Firefoam</debugLabel>
+              <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+              <workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+              <overlayLayer>Body</overlayLayer>
+              <useGraphic>false</useGraphic>
+              <baseLayer>20</baseLayer>
+            </li>
+          </children>
+        </li>
+        <li Class="PawnRenderNodeProperties_Carried">
+          <debugLabel>Carried thing</debugLabel>
+          <workerClass>PawnRenderNodeWorker_Carried</workerClass>
+        </li>
+      </children>
+    </root>
+  </PawnRenderTreeDef>
+
+</Defs>

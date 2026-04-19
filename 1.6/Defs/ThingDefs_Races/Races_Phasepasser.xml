@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BasePawn">
+    <defName>NAT_Phasepasser</defName>
+    <label>phasepasser</label>
+    <description>A curved human figure with massive shoulder and carpal protrusions.\n\nThe Collector is an overgrown sightstealer who has acquired an irresistible mania for collecting along with complete self-awareness.</description>
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <statBases>
+      <MoveSpeed>6.9</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MinimumContainmentStrength>80</MinimumContainmentStrength>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+      <LeatherAmount>70</LeatherAmount>
+      <MeatAmount>30</MeatAmount>
+      <PainShockThreshold>0.95</PainShockThreshold>
+    </statBases>
+    <tradeability>None</tradeability>
+    <hideStats>true</hideStats>
+    <onlyShowInspectString>true</onlyShowInspectString>
+    <hideMainDesc>true</hideMainDesc>
+    <race>
+      <thinkTreeMain>NAT_Phasepasser</thinkTreeMain>
+      <thinkTreeConstant>NAT_PhasepasserConstant</thinkTreeConstant>
+      <startingAnimation>NAT_Phasepasser</startingAnimation>
+      <renderTree>NAT_Phasepasser</renderTree>
+      <body>Human</body>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHealthScale>2</baseHealthScale>
+      <intelligence>ToolUser</intelligence>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <bloodDef>Filth_DarkBlood</bloodDef>
+      <bleedRateFactor>0</bleedRateFactor>
+      <fleshType>EntityFlesh</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <leatherDef>Leather_Dread</leatherDef>
+      <foodType>None</foodType>
+      <hasCorpse>true</hasCorpse>
+      <lifeExpectancy>450</lifeExpectancy>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundCallIntervalRange>120~240</soundCallIntervalRange>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <trainability>None</trainability>
+      <canBecomeShambler>true</canBecomeShambler>
+      <waterCellCost>14</waterCellCost>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <soundCall>Pawn_Revenant_Call</soundCall>
+          <soundWounded>Pawn_Revenant_Wounded</soundWounded>
+          <soundDeath>Pawn_Revenant_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+      <hediffGiverSets>
+        <li>AnomalyEntity</li>
+      </hediffGiverSets>
+      <corpseHiddenWhileUndiscovered>true</corpseHiddenWhileUndiscovered>
+    </race>
+    <comps>
+      <li Class="NAT.CompProperties_Phasepasser">
+        <attackCooldown>25</attackCooldown>
+        <damageRange>3~6</damageRange>
+        <armorPenetrationRange>0.5~1</armorPenetrationRange>
+        <beamMote>NAT_Mote_PhasepasserBeam</beamMote>
+        <headAngleRange>-30~30</headAngleRange>
+        <beamPointNorth>(0, 0, 0.55)</beamPointNorth>
+        <beamPointEast>(0.2, 0, 0.55)</beamPointEast>
+        <beamPointSouth>(0, 0, 0.55)</beamPointSouth>
+        <beamPointWest>(-0.2, 0, 0.55)</beamPointWest>
+      </li>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
+        <lookForTargetOnEscape>false</lookForTargetOnEscape>
+      </li>
+      <li Class="CompProperties_AttachPoints">
+        <points>
+          <li>
+            <offset>(-.51, 0, .43)</offset>
+            <type>PlatformRestraint0</type>
+          </li>
+          <li>
+            <offset>(.51, 0, .43)</offset>
+            <type>PlatformRestraint1</type>
+          </li>
+          <li>
+            <offset>(.2, 0, -.71)</offset>
+            <type>PlatformRestraint2</type>
+          </li>
+          <li>
+            <offset>(-.26, 0, -.75)</offset>
+            <type>PlatformRestraint3</type>
+          </li>
+        </points>
+      </li>
+      <li Class="CompProperties_ProducesBioferrite">
+        <bioferriteDensity>2</bioferriteDensity>
+      </li>
+      <li Class="CompProperties_Studiable">
+        <frequencyTicks>120000</frequencyTicks>
+        <knowledgeCategory>Advanced</knowledgeCategory>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <PawnKindDef>
+    <defName>NAT_Phasepasser</defName>
+    <label>phasepasser</label>
+    <race>NAT_Phasepasser</race>
+    <defaultFactionType>Entities</defaultFactionType>
+    <overrideDeathOnDownedChance>0.5</overrideDeathOnDownedChance>
+    <immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+    <immuneToTraps>true</immuneToTraps>
+    <collidesWithPawns>false</collidesWithPawns>
+    <skipResistant>true</skipResistant>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <isBoss>true</isBoss>
+    <canOpenDoors>false</canOpenDoors>
+    <canOpenAnyDoor>false</canOpenAnyDoor>
+    <canMeleeAttack>false</canMeleeAttack>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/NAT_Phasepasser/NAT_Phasepasser</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/NAT_Collector/NAT_Collector_Dessicated</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <attachPoints>
+            <li>
+              <offset>(-.45, 0, .35)</offset>
+              <type>PlatformRestraint0</type>
+            </li>
+            <li>
+              <offset>(.45, 0, .35)</offset>
+              <type>PlatformRestraint1</type>
+            </li>
+            <li>
+              <offset>(.2, 0, -.71)</offset>
+              <type>PlatformRestraint2</type>
+            </li>
+            <li>
+              <offset>(-.2, 0, -.71)</offset>
+              <type>PlatformRestraint3</type>
+            </li>
+          </attachPoints>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+    <startingHediffs>
+      <li>
+        <def>HoraxianInvisibility</def>
+      </li>
+    </startingHediffs>
+    <combatPower>300</combatPower>
+  </PawnKindDef>
+
+</Defs>

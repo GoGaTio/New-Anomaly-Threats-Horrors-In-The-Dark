@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName = "MetalhorrorImplant"]/possiblePathways</xpath>
+    <value>
+      <NAT_ByCollector>Implanted by collector in his lair</NAT_ByCollector>
+    </value>
+  </Operation>
+
+</Patch>

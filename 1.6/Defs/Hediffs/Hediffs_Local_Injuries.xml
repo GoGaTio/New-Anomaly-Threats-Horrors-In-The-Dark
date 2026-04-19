@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>NAT_Distorted</defName>
+    <label>distortion</label>
+    <labelNoun>an energy bolt wound</labelNoun>
+    <description>A wound from an energy bolt.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.05</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>old distortion</permanentLabel>
+        <instantlyPermanentLabel>permanent distortion</instantlyPermanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.03</bleedRate>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Blasted off</destroyedLabel>
+      <destroyedOutLabel>Blasted out</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+</Defs>

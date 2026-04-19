@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EffecterDef>
+    <defName>NAT_CollectorHowl</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>NAT_Mote_CollectorHowl_Distortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <moteDef>NAT_Mote_CollectorHowl_Dark</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <initialDelayTicks>10</initialDelayTicks>
+        <destroyMoteOnCleanup>false</destroyMoteOnCleanup>
+      </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

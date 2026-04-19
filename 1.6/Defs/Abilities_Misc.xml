@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef>
+    <defName>NAT_CollectorHowl</defName>
+    <label>collector howl</label>
+    <description>Release a terrifying roar which will summon sightstealers neraby.</description>
+    <cooldownTicksRange>60000</cooldownTicksRange> <!-- 1 day -->
+    <targetRequired>false</targetRequired>
+    <aiCanUse>false</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <jobDef>NAT_CollectorCastAbility</jobDef>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <soundCast>Sightstealer_DistantHowlLarge</soundCast>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityCollectorHowl">
+        <sightstealersPointsFromPointsCurve>
+          <points>
+            <li>(0, 560)</li>
+            <li>(10000, 5600)</li>
+          </points>
+        </sightstealersPointsFromPointsCurve>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnCaster">
+        <effecterDef>NAT_CollectorHowl</effecterDef>
+        <maintainTicks>20</maintainTicks> <!-- Long enough for the "2nd wave" to spawn -->
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>NAT_PhaseTo</defName>
+    <label>phasepassing</label>
+    <description>Release a terrifying roar which will summon sightstealers neraby.</description>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <targetRequired>true</targetRequired>
+    <aiCanUse>false</aiCanUse>
+    <displayOrder>300</displayOrder>
+    <showPsycastEffects>false</showPsycastEffects>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <violent>false</violent>
+      <range>15.9</range>
+      <targetable>true</targetable>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="NAT.CompProperties_AbilityPhaseTo"/>
+    </comps>
+  </AbilityDef>
+
+</Defs>

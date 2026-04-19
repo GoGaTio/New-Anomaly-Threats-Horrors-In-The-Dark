@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EntityCodexEntryDef>
+    <defName>NAT_Collector</defName>
+    <label>collector</label>
+    <useDescriptionFrom>NAT_Collector</useDescriptionFrom>
+    <uiIconPath>UI/CodexEntries/NAT_Collector</uiIconPath>
+    <discoveryType>BecameVisible</discoveryType>
+    <category>Advanced</category>
+    <linkedThings>
+      <li>NAT_Collector</li>
+    </linkedThings>
+    <provocationIncidents>
+      <li>NAT_Collector</li>
+    </provocationIncidents>
+    <orderInCategory>1534</orderInCategory>
+    <modExtensions>
+      <li Class="NAT.CodexEntryExtension"/>
+    </modExtensions>
+  </EntityCodexEntryDef>
+
+  <EntityCodexEntryDef>
+    <defName>NAT_Phasepasser</defName>
+    <label>phasepasser</label>
+    <useDescriptionFrom>NAT_Phasepasser</useDescriptionFrom>
+    <uiIconPath>UI/CodexEntries/NAT_Collector</uiIconPath>
+    <discoveryType>BecameVisible</discoveryType>
+    <category>Advanced</category>
+    <linkedThings>
+      <li>NAT_Phasepasser</li>
+    </linkedThings>
+    <provocationIncidents>
+      <li>NAT_Collector</li>
+    </provocationIncidents>
+    <orderInCategory>1534</orderInCategory>
+    <modExtensions>
+      <li Class="NAT.CodexEntryExtension"/>
+    </modExtensions>
+  </EntityCodexEntryDef>
+
+</Defs>

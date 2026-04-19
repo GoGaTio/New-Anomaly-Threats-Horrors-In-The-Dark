@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>NAT_Distortion</defName>
+    <label>distortion</label>
+    <workerClass>DamageWorker_Bite</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been killed by a flesh distortion.</deathMessage>
+    <hediff>NAT_Distorted</hediff>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+  </DamageDef>
+  
+</Defs>

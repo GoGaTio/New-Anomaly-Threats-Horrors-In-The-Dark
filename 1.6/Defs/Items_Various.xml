@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef> 
+    <defName>NAT_CollectorNotes</defName> 
+    <label>collector notes</label> 
+    <description>Piece of leather with unreadable symbols.</description> 
+    <thingClass>ThingWithComps</thingClass> 
+    <category>Item</category> 
+    <genericMarketSellable>false</genericMarketSellable> 
+    <drawerType>MapMeshOnly</drawerType> 
+    <tickerType>Normal</tickerType> 
+    <rotatable>false</rotatable> 
+    <altitudeLayer>Item</altitudeLayer> 
+    <selectable>true</selectable> 
+    <alwaysHaulable>true</alwaysHaulable> 
+    <drawGUIOverlay>true</drawGUIOverlay> 
+    <scatterableOnMapGen>false</scatterableOnMapGen> 
+    <useHitPoints>false</useHitPoints> 
+    <healthAffectsPrice>false</healthAffectsPrice> 
+    <graphicData> 
+      <texPath>Things/Item/NAT_CollectorNotes</texPath> 
+      <graphicClass>Graphic_Single</graphicClass> 
+      <drawSize>(0.85, 0.85)</drawSize> 
+    </graphicData> 
+    <soundInteract>Standard_Pickup</soundInteract> 
+    <soundDrop>Standard_Drop</soundDrop> 
+    <stackLimit>1</stackLimit> 
+    <intricate>true</intricate> 
+    <statBases> 
+      <Mass>0.05</Mass> 
+      <Beauty>-7</Beauty> 
+    </statBases> 
+    <thingCategories> 
+      <li>ItemsMisc</li> 
+    </thingCategories> 
+    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered> 
+    <comps> 
+      <li Class="CompProperties_Forbiddable"> 
+        <forbidOnMake>true</forbidOnMake> 
+      </li> 
+      <li Class="CompProperties_Studiable"> 
+        <frequencyTicks>60000</frequencyTicks> 
+        <knowledgeCategory>Advanced</knowledgeCategory> 
+        <anomalyKnowledge>1.5</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy> 
+        <showToggleGizmo>true</showToggleGizmo> 
+      </li> 
+      <li Class="CompProperties_StudyUnlocks"> 
+        <studyNotes> 
+          <li> 
+            <threshold>1</threshold> 
+            <label>Collector's notes study progress</label> 
+            <text>Investigation of the strange symbols has revealed some information. It seems that these notes designate location of all stolen things.\n\n{PAWN_nameDef} believes that he can find out, how to decrypt it.</text> 
+          </li> 
+          <li> 
+            <threshold>4</threshold> 
+            <label>Collector's notes study complete</label> 
+            <text>{PAWN_nameDef} has completed {PAWN_possessive} studying. {PAWN_pronoun} finds a way to decrypt the notes. Order someone to peruse them.</text> 
+          </li> 
+        </studyNotes> 
+      </li> 
+      <li Class="NAT.CompProperties_CollectorNotes"> 
+        <activeTicks>1</activeTicks> 
+        <ticksToActivate>180</ticksToActivate> 
+        <activateTexPath>UI/Commands/NAT_CollectorNotesRead</activateTexPath> 
+        <jobString>decrypt notes</jobString> 
+        <activateLabelString>Order notes decrypting</activateLabelString> 
+        <activateDescString>Order someone to decrypt notes.</activateDescString> 
+        <guiLabelString>Choose who should decrypt notes.</guiLabelString> 
+        <activatingString>decrypting notes</activatingString> 
+        <activatingStringPending>decrypting notes</activatingStringPending> 
+        <showMustBeActivatedByColonist>false</showMustBeActivatedByColonist> 
+        <targetingParameters> 
+          <canTargetBuildings>false</canTargetBuildings> 
+          <canTargetAnimals>false</canTargetAnimals> 
+          <canTargetMechs>false</canTargetMechs> 
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns> 
+        </targetingParameters> 
+      </li> 
+    </comps> 
+  </ThingDef>
+
+  <ThingDef>
+    <defName>NAT_DistortedFlesh</defName>
+    <label>distorted flesh</label>
+    <description>Pieces of twisted muscle and gristle, bloated with tumorous growths. These bizarre shreds of flesh must have come from a horrific creature.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <selectable>true</selectable>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Rare</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tradeability>Sellable</tradeability>
+    <pathCost>14</pathCost>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Beauty>-6</Beauty>
+      <DeteriorationRate>6</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.05</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+      <MarketValue>0.5</MarketValue>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/NAT_DistortedFlesh</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li>TwistedMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+      <specialThoughtDirect>AteTwistedMeat</specialThoughtDirect>
+      <specialThoughtAsIngredient>AteTwistedMeat</specialThoughtAsIngredient>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li>
+        <compClass>CompHarbingerTreeConsumable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

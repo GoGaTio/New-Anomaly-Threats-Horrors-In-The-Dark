@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StructureLayoutDef>
+    <defName>NAT_CollectorLair</defName>
+    <workerClass>NAT.LayoutWorker_CollectorLair</workerClass>
+    <canHaveMultipleLayoutsInRoom>false</canHaveMultipleLayoutsInRoom>
+    <clearRoomsEntirely>true</clearRoomsEntirely>
+    <minRoomWidth>7</minRoomWidth>
+    <minRoomHeight>7</minRoomHeight>
+    <terrainDef>AncientConcrete</terrainDef>
+    <!-- Structure -->
+    <doorStuffDef>WoodLog</doorStuffDef>
+    <wallStuffDef>BlocksGranite</wallStuffDef>
+    <roomDefs>
+      
+      <NAT_CollectorLairEntrance>
+        <weight>999</weight>
+        <countRange>1</countRange>
+      </NAT_CollectorLairEntrance>
+
+      <NAT_CollectorBedroom>
+        <weight>999</weight>
+        <countRange>1</countRange>
+      </NAT_CollectorBedroom>
+
+      <NAT_CollectionRoom>
+        <weight>2</weight>
+      </NAT_CollectionRoom>
+
+      <NAT_AncientStorageRoom>
+        <weight>0.5</weight>
+      </NAT_AncientStorageRoom>
+
+      <NAT_LabyrinthRustedOutpost MayRequire="GoGaTio.NewAnomalyThreats.RustedArmy">
+        <weight>0.075</weight>
+        <countRange>0~1</countRange>
+      </NAT_LabyrinthRustedOutpost>
+
+    </roomDefs>
+    <junkScaterrers>
+      <Filth_Trash>
+        <groupsPerHundredCells>0~3</groupsPerHundredCells>
+        <itemsPerGroup>2~4</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+      </Filth_Trash>
+      <Filth_BlastMark>
+        <groupsPerHundredCells>-2~1</groupsPerHundredCells>
+        <!-- ~66% to not appear -->
+        <itemsPerGroup>1~1</itemsPerGroup>
+      </Filth_BlastMark>
+      <Filth_MachineBits>
+        <groupsPerHundredCells>-1~1</groupsPerHundredCells>
+        <!-- ~50% to not appear -->
+        <itemsPerGroup>2~4</itemsPerGroup>
+        <groupDistRange>2~4</groupDistRange>
+      </Filth_MachineBits>
+      <CollapsedRocks>
+        <groupsPerHundredCells>1~2</groupsPerHundredCells>
+        <itemsPerGroup>2~8</itemsPerGroup>
+        <groupDistRange>1~3</groupDistRange>
+        <minGroups>1</minGroups>
+      </CollapsedRocks>
+      <AncientRazorWire>
+        <groupsPerHundredCells>1~2</groupsPerHundredCells>
+        <itemsPerGroup>4~6</itemsPerGroup>
+        <groupDistRange>2~4</groupDistRange>
+        <minGroups>1</minGroups>
+      </AncientRazorWire>
+      <Filth_RubbleRock>
+        <groupsPerHundredCells>2~4</groupsPerHundredCells>
+        <itemsPerGroup>3~8</itemsPerGroup>
+        <groupDistRange>3~5</groupDistRange>
+        <minGroups>1</minGroups>
+      </Filth_RubbleRock>
+      <Granite>
+        <groupsPerHundredCells>1~2</groupsPerHundredCells>
+        <itemsPerGroup>3~8</itemsPerGroup>
+        <groupDistRange>1~2</groupDistRange>
+        <minGroups>1</minGroups>
+      </Granite>
+    </junkScaterrers>
+  </StructureLayoutDef>
+
+</Defs>
