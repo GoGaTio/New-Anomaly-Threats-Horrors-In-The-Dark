@@ -22,14 +22,15 @@
               <workerClass>NAT.PawnRenderNodeWorker_PhasepasserHead</workerClass>
               <baseLayer>10</baseLayer>
               <useRottenColor>true</useRottenColor>
+              <overrideMeshSize>2</overrideMeshSize>
               <drawData>
                 <dataNorth>
                   <offset>(0, 0, 0.55)</offset>
                   <layer>-5</layer>
                 </dataNorth>
-                <dataEast><offset>(0.2, 0, 0.55)</offset></dataEast>
+                <dataEast><offset>(0.5, 0, 0.55)</offset></dataEast>
                 <dataSouth><offset>(0, 0, 0.55)</offset></dataSouth>
-                <dataWest><offset>(-0.2, 0, 0.55)</offset></dataWest>
+                <dataWest><offset>(-0.5, 0, 0.55)</offset></dataWest>
               </drawData>
             </li>
             <li>

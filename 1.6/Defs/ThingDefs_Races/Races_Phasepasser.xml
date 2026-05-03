@@ -39,7 +39,7 @@
       <hasGenders>false</hasGenders>
       <bloodDef>Filth_DarkBlood</bloodDef>
       <bleedRateFactor>0</bleedRateFactor>
-      <fleshType>EntityFlesh</fleshType>
+      <fleshType>EntityMechanical</fleshType>
       <isImmuneToInfections>true</isImmuneToInfections>
       <specificMeatDef>Meat_Twisted</specificMeatDef>
       <leatherDef>Leather_Dread</leatherDef>
@@ -134,12 +134,12 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/NAT_Phasepasser/NAT_Phasepasser</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2</drawSize>
+          <drawSize>3</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/NAT_Collector/NAT_Collector_Dessicated</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2</drawSize>
+          <drawSize>3</drawSize>
           <attachPoints>
             <li>
               <offset>(-.45, 0, .35)</offset>
