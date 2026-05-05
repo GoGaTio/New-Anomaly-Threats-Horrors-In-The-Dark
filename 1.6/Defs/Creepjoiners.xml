@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <CreepJoinerBenefitDef>
+    <defName>NAT_Phasepassing</defName>
+    <label>phasepassing</label>
+    <weight>0.5</weight>
+    <letterExtra>{PAWN_pronoun} offers to use {PAWN_possessive} healing power to help you.</letterExtra>
+    <abilities>
+      <li>NAT_PhaseTo_Creepjoiner</li>
+    </abilities>
+  </CreepJoinerBenefitDef>
+  
+</Defs>

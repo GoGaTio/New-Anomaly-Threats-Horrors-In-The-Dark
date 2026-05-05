@@ -37,8 +37,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="NewAnomalyThreats">
-      <HintPath>..\..\..\NewAnomalyThreats\1.6\Assemblies\NewAnomalyThreats.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\NewAnomalyThreatsFramework\1.6\Assemblies\NewAnomalyThreats.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,6 +66,7 @@
     <Compile Include="DefOf.cs" />
     <Compile Include="Pawn.cs" />
     <Compile Include="Render.cs" />
+    <Compile Include="Shadows.cs" />
     <Compile Include="ThingComps\CompPhasepasser.cs" />
     <Compile Include="ThingComps\CompCollector.cs" />
     <Compile Include="ThingComps\CompCollectorNotes.cs" />

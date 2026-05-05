@@ -39,9 +39,9 @@
     </comps>
   </AbilityDef>
 
-  <AbilityDef>
+  <AbilityDef Name="NAT_PhaseToBase">
     <defName>NAT_PhaseTo</defName>
-    <label>phasepassing</label>
+    <label>phasepass</label>
     <description>Release a terrifying roar which will summon sightstealers neraby.</description>
     <cooldownTicksRange>2500</cooldownTicksRange>
     <targetRequired>true</targetRequired>
@@ -62,12 +62,21 @@
         <canTargetLocations>true</canTargetLocations>
         <canTargetPawns>false</canTargetPawns>
         <canTargetBuildings>false</canTargetBuildings>
-        
       </targetParams>
     </verbProperties>
     <comps>
       <li Class="NAT.CompProperties_AbilityPhaseTo"/>
     </comps>
+  </AbilityDef>
+
+<AbilityDef ParentName="NAT_PhaseToBase">
+    <defName>NAT_PhaseTo_Creepjoiner</defName>
+    <description>Release a terrifying roar which will summon sightstealers neraby.</description>
+    <charges>3</charges>
+    <cooldownPerCharge>true</cooldownPerCharge>
+    <verbProperties>
+      <range>9.9</range>
+    </verbProperties>
   </AbilityDef>
 
 </Defs>

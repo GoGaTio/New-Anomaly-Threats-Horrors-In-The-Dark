@@ -51,6 +51,7 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
+using NAT;
 using static Verse.HediffCompProperties_RandomizeSeverityPhases;
 
 namespace NAT

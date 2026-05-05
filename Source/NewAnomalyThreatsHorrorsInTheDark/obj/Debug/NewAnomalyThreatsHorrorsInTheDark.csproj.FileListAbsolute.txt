@@ -2,3 +2,4 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NewAnomalyThreatsHor
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NewAnomalyThreatsHorrorsInTheDark\Source\NewAnomalyThreatsHorrorsInTheDark\obj\Debug\NewAnomalyThreatsHorrorsInTheDark.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NewAnomalyThreatsHorrorsInTheDark\1.6\Assemblies\NewAnomalyThreatsHorrorsInTheDark.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NewAnomalyThreatsHorrorsInTheDark\Source\NewAnomalyThreatsHorrorsInTheDark\obj\Debug\NewAnomalyThreatsHorrorsInTheDark.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\NewAnomalyThreatsHorrorsInTheDark\Source\NewAnomalyThreatsHorrorsInTheDark\obj\Debug\NewAnoma.47B5E1ED.Up2Date

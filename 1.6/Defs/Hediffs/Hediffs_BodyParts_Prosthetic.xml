@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Misc -->
+
+  <!-- Revenant Vertebrae -->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>NAT_PhasepassGland</defName>
+    <label>revenant vertebrae</label>
+    <description>An installed prosthetic that allows the user to temporarily become invisible. The prosthetic is crafted from a modified revenant spine, using archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
+    <abilities>
+      <li>NAT_PhaseTo</li>
+    </abilities>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>NAT_PhasepassGland</defName>
+    <label>revenant vertebrae</label>
+    <description>A prosthetic spine that allows the user to temporarily become invisible. The prosthetic is crafted from a modified revenant spine and uses archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
+    <descriptionHyperlinks><RecipeDef>InstallRevenantVertebrae</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <Mass>0.3</Mass>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <techHediffsTags Inherit="False">
+    </techHediffsTags>
+    <costList>
+      <Bioferrite>10</Bioferrite>
+      <Shard>2</Shard>
+      <RevenantSpine>1</RevenantSpine>
+    </costList>
+    <tradeTags Inherit="false" />
+    <recipeMaker Inherit="false">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>RevenantInvisibility</researchPrerequisite>
+      <recipeUsers>
+        <li>BioferriteShaper</li>
+      </recipeUsers>
+      <displayPriority>160</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>NAT_InstallPhasepassGland</defName>
+    <label>install revenant vertebrae</label>
+    <description>Install revenant vertebrae.</description>
+    <descriptionHyperlinks>
+      <ThingDef>NAT_PhasepassGland</ThingDef>
+      <HediffDef>NAT_PhasepassGland</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing revenant vertebrae.</jobString>
+    <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>NAT_PhasepassGland</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>NAT_PhasepassGland</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>NAT_PhasepassGland</addsHediff>
+  </RecipeDef>
+
+<RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>NAT_RemovePhasepassGland</defName>
+    <label>remove coagulator</label>
+    <description>Remove coagulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>NAT_PhasepassGland</ThingDef>
+      <HediffDef>NAT_PhasepassGland</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing coagulator.</jobString>
+    <removesHediff>NAT_PhasepassGland</removesHediff>
+  </RecipeDef>
+</Defs>
