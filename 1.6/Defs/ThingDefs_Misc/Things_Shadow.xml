@@ -7,27 +7,27 @@
     <description>Pieces of twisted muscle and gristle, bloated with tumorous growths. These bizarre shreds of flesh must have come from a horrific creature.</description>
     <thingClass>NAT.Shadow</thingClass>
     <selectable>true</selectable>
-    <category>Item</category>
+    <category>None</category>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
     <drawerType>MapMeshOnly</drawerType>
     <tickerType>Normal</tickerType>
     <rotatable>false</rotatable>
     <altitudeLayer>Item</altitudeLayer>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <isAutoAttackableMapObject>true</isAutoAttackableMapObject>
     <drawGUIOverlay>true</drawGUIOverlay>
+    <useHitPoints>true</useHitPoints>
     <statBases>
-      <MaxHitPoints>60</MaxHitPoints>
-      <Beauty>-6</Beauty>
-      <DeteriorationRate>6</DeteriorationRate>
-      <Mass>0.03</Mass>
-      <Flammability>0.5</Flammability>
-      <Nutrition>0.05</Nutrition>
-      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
-      <MarketValue>0.5</MarketValue>
+      <Mass>0.01</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
     </statBases>
     <graphicData>
       <texPath>Things/Item/NAT_DistortedFlesh</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <modExtensions>
+      <li Class="NAT.CanHaveFactionExtension"/>
+    </modExtensions>
   </ThingDef>
   
 </Defs>

@@ -52,6 +52,7 @@ using Verse.Noise;
 using Verse.Profile;
 using Verse.Sound;
 using Verse.Steam;
+using static UnityEngine.GraphicsBuffer;
 using static UnityEngine.Scripting.GarbageCollector;
 
 namespace NAT
@@ -66,32 +67,7 @@ namespace NAT
 
 		public FloatRange headAngleRange = new FloatRange(0, 1);
 
-		public ThingDef beamMote;
-
-		public Vector3 beamPointNorth;
-
-		public Vector3 beamPointEast;
-
-		public Vector3 beamPointSouth;
-
-		public Vector3 beamPointWest;
-
-		public Vector3 BeamStartOffset(int rot)
-		{
-			switch (rot)
-			{
-				case 0:
-					return beamPointNorth;
-				case 1:
-					return beamPointEast;
-				case 2:
-					return beamPointSouth;
-				case 3:
-					return beamPointWest;
-				default:
-					return Vector3.zero;
-			}
-		}
+		public EffecterDef attackEffecter;
 
 		public CompProperties_Phasepasser()
 		{
@@ -107,20 +83,18 @@ namespace NAT
 
 		private int lastDetectedTick = -99999;
 
-		private int attackCooldownTicks;
-
 		private static float lastNotified = -99999f;
 
 		private float headAngle;
 
-		private MoteDualAttached mote;
+		public int ticksSinceLastAttack;
 
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
 			Scribe_Values.Look(ref headAngle, "headAngle", 0);
 			Scribe_Values.Look(ref lastDetectedTick, "lastDetectedTick", 0);
-			Scribe_Values.Look(ref attackCooldownTicks, "attackCooldownTicks", 0);
+			Scribe_Values.Look(ref ticksSinceLastAttack, "ticksSinceLastAttack", 0);
 		}
 
 		private Pawn Phasepasser => (Pawn)parent;
@@ -145,30 +119,25 @@ namespace NAT
 			}
 		}
 
-		public void RemoveMote()
-		{
-			mote = null;
-		}
 		public bool KeepAttackTick(Thing target)
 		{
-			if (Phasepasser.DeadOrDowned)
+			if (Phasepasser.DeadOrDowned || target.Map != parent.Map || parent.Position.DistanceTo(target.Position) > 1.5f)
 			{
 				return false;
 			}
-			if (mote == null)
+			Pawn pawn = target as Pawn;
+			if (pawn.DeadOrDowned)
 			{
-				mote = MoteMaker.MakeInteractionOverlay(Props.beamMote, parent, target);
+				return false;
 			}
-			mote.UpdateTargets(parent, target, Props.BeamStartOffset(Phasepasser.Rotation.AsInt), Vector3.zero);
-			mote.Maintain();
-			attackCooldownTicks--;
-			if(attackCooldownTicks > 0)
+			if (Phasepasser.stances.stunner?.Stunned == true || Phasepasser.stances.curStance is Stance_Cooldown)
 			{
 				return true;
 			}
-			attackCooldownTicks = Props.attackCooldown;
-			Pawn pawn = target as Pawn;
 			target.TakeDamage(new DamageInfo(NATHDDefOf.NAT_Distortion, Props.damageRange.RandomInRange, Props.armorPenetrationRange.RandomInRange, -1, Phasepasser));
+			Phasepasser.stances.SetStance(new Stance_Cooldown(Props.attackCooldown, target, null));
+			Props.attackEffecter?.SpawnAttached(target, parent.Map);
+			ticksSinceLastAttack = 0;
 			if ((pawn != null && pawn.DeadOrDowned) || target.Destroyed)
 			{
 				return false;
@@ -207,6 +176,7 @@ namespace NAT
 
         public override void CompTick()
 		{
+			ticksSinceLastAttack++;
 			base.CompTick();
 			if (Invisibility == null)
 			{

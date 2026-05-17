@@ -3,14 +3,50 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreatshorrorsinthedark\\source\\newanomalythreatshorrorsinthedark\\weatherevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:weatherevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreatshorrorsinthedark\\source\\newanomalythreatshorrorsinthedark\\flare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:flare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreatshorrorsinthedark\\source\\newanomalythreatshorrorsinthedark\\thingcomps\\compcollectornotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:thingcomps\\compcollectornotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\jobs\\jobdrivers_misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:jobs\\jobdrivers_misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\thingcomps\\compphasepasser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:thingcomps\\compphasepasser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreatshorrorsinthedark\\source\\newanomalythreatshorrorsinthedark\\shadows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:shadows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsRustedArmy\\1.6\\Defs\\Misc\\Duties.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3721499873\\1.6\\Defs\\MutantDefs\\Mutants.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreatshorrorsinthedark\\source\\newanomalythreatshorrorsinthedark\\shadows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:shadows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3721499873\\1.6\\Patches\\ThinkTreeDef_Patch.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\roomcontents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,10 +55,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\building_collectioncase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:building_collectioncase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\newanomalythreatshorrorsinthedark\\source\\newanomalythreatshorrorsinthedark\\jobs\\jobdrivers_misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:jobs\\jobdrivers_misc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\abilities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,9 +79,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Animal_Base.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\DeadManSwitchRenegadeClan\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Various.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -71,16 +100,8 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Jobs\\Jobs_Phasepasser.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\thingcomps\\compphasepasser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:thingcomps\\compphasepasser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\jobs\\jobgivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:jobs\\jobgivers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54373A91-15AF-4058-AD75-DF9F7BDC1C75}|NewAnomalyThreatsHorrorsInTheDark.csproj|solutionrelative:defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Animatons.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
@@ -186,7 +207,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,46 +215,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SandWorm_ThingDefs.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-05-04T20:43:35.358Z",
+              "DocumentIndex": 2,
+              "Title": "CompCollectorNotes.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\ThingComps\\CompCollectorNotes.cs",
+              "RelativeDocumentMoniker": "ThingComps\\CompCollectorNotes.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\ThingComps\\CompCollectorNotes.cs",
+              "RelativeToolTip": "ThingComps\\CompCollectorNotes.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwEYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T17:55:27.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Things_Shadow.xml",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
-              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
-              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-05-04T20:32:58.483Z",
+              "Title": "Flare.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Flare.cs",
+              "RelativeDocumentMoniker": "Flare.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Flare.cs",
+              "RelativeToolTip": "Flare.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T17:36:56.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "WeatherEvent.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\WeatherEvent.cs",
+              "RelativeDocumentMoniker": "WeatherEvent.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\WeatherEvent.cs",
+              "RelativeToolTip": "WeatherEvent.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T17:20:41.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Duties.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsRustedArmy\\1.6\\Defs\\Misc\\Duties.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\NewAnomalyThreatsRustedArmy\\1.6\\Defs\\Misc\\Duties.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsRustedArmy\\1.6\\Defs\\Misc\\Duties.xml",
+              "RelativeToolTip": "..\\..\\..\\NewAnomalyThreatsRustedArmy\\1.6\\Defs\\Misc\\Duties.xml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-05-09T09:37:02.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Shadows.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Shadows.cs",
               "RelativeDocumentMoniker": "Shadows.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Shadows.cs",
               "RelativeToolTip": "Shadows.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswIMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-04T20:29:15.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Mutants.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3721499873\\1.6\\Defs\\MutantDefs\\Mutants.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3721499873\\1.6\\Defs\\MutantDefs\\Mutants.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3721499873\\1.6\\Defs\\MutantDefs\\Mutants.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3721499873\\1.6\\Defs\\MutantDefs\\Mutants.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-05-07T20:55:55.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ThinkTreeDef_Patch.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3721499873\\1.6\\Patches\\ThinkTreeDef_Patch.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3721499873\\1.6\\Patches\\ThinkTreeDef_Patch.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3721499873\\1.6\\Patches\\ThinkTreeDef_Patch.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3721499873\\1.6\\Patches\\ThinkTreeDef_Patch.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-05-07T20:53:32.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SandWorm_ThingDefs.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\workshop\\content\\294100\\3713982815\\1.6\\Defs\\SandWorm_ThingDefs.xml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-05-04T20:43:35.358Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Things_Shadow.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
+              "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
+              "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Misc\\Things_Shadow.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-05-04T20:32:58.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Races_Unkillable.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Races\\Races_Unkillable.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_Unkillable.xml",
@@ -245,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "Races_Animal_Base.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Animal_Base.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\ThingDefs_Races\\Races_Animal_Base.xml",
@@ -257,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "Races_Collector.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
@@ -265,11 +359,12 @@
               "RelativeToolTip": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_Collector.xml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2026-02-15T01:09:05.303Z"
+              "WhenOpened": "2026-02-15T01:09:05.303Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Pawn.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Pawn.cs",
               "RelativeDocumentMoniker": "Pawn.cs",
@@ -281,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Apparel_Various.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\DeadManSwitchRenegadeClan\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Various.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\DeadManSwitchRenegadeClan\\1.6\\Defs\\ThingDefs_Misc\\Apparel_Various.xml",
@@ -293,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "PlanetLayers.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Odyssey\\Defs\\PlanetLayerDefs\\PlanetLayers.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Odyssey\\Defs\\PlanetLayerDefs\\PlanetLayers.xml",
@@ -305,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "PlanetLayerSettings.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Odyssey\\Defs\\WorldLayerSettingsDefs\\PlanetLayerSettings.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Odyssey\\Defs\\WorldLayerSettingsDefs\\PlanetLayerSettings.xml",
@@ -317,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "Abilities_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Abilities_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Abilities_Misc.xml",
@@ -329,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "Incidents_Map_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsObelisks\\1.6\\Defs\\Incidents_Map_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\NewAnomalyThreatsObelisks\\1.6\\Defs\\Incidents_Map_Misc.xml",
@@ -341,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "MapMeshFlagDefs.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\MapMeshFlagDefs\\MapMeshFlagDefs.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\MapMeshFlagDefs\\MapMeshFlagDefs.xml",
@@ -353,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Render.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Render.cs",
               "RelativeDocumentMoniker": "Render.cs",
@@ -365,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Damages_Environmental.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\DamageDefs\\Damages_Environmental.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\DamageDefs\\Damages_Environmental.xml",
@@ -377,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "Damages_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Core\\Defs\\DamageDefs\\Damages_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Core\\Defs\\DamageDefs\\Damages_Misc.xml",
@@ -389,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "Damages_RangedWeapon.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\DamageDefs\\Damages_RangedWeapon.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Biotech\\Defs\\DamageDefs\\Damages_RangedWeapon.xml",
@@ -401,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "Damages_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\DamageDefs\\Damages_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Biotech\\Defs\\DamageDefs\\Damages_Misc.xml",
@@ -413,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "PawnRenderTreeDefs.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\PawnRenderTreeDefs.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\PawnRenderTreeDefs.xml",
@@ -425,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Races_Phasepasser.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThingDefs_Races\\Races_Phasepasser.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThingDefs_Races\\Races_Phasepasser.xml",
@@ -437,19 +532,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 6,
               "Title": "CompPhasepasser.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\ThingComps\\CompPhasepasser.cs",
               "RelativeDocumentMoniker": "ThingComps\\CompPhasepasser.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\ThingComps\\CompPhasepasser.cs",
               "RelativeToolTip": "ThingComps\\CompPhasepasser.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAiwIAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAowFsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T16:58:20.101Z"
+              "WhenOpened": "2026-01-14T16:58:20.101Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\DeadManSwitchRenegadeClan\\Languages\\English\\Keyed\\Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\DeadManSwitchRenegadeClan\\Languages\\English\\Keyed\\Misc.xml",
@@ -467,14 +563,14 @@
               "RelativeDocumentMoniker": "Jobs\\JobDrivers_Misc.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Jobs\\JobDrivers_Misc.cs",
               "RelativeToolTip": "Jobs\\JobDrivers_Misc.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAcwIsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAqwOoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-14T13:23:12.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Mote_Visual.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Biotech\\Defs\\Effects\\Mote_Visual.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Biotech\\Defs\\Effects\\Mote_Visual.xml",
@@ -486,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "Mote.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Effects\\Mote.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Effects\\Mote.xml",
@@ -498,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "Damages_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Damages_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Damages_Misc.xml",
@@ -510,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "Hediffs_Local_Injuries.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Hediffs\\Hediffs_Local_Injuries.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Hediffs\\Hediffs_Local_Injuries.xml",
@@ -522,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "Animatons.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Animatons.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Animatons.xml",
@@ -534,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "PawnGroupKinds.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\PawnGroupKinds.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\PawnGroupKinds.xml",
@@ -546,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "Incidents_Map_Threats.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsSeaMonsters\\1.6\\Defs\\Incidents_Map_Threats.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\NewAnomalyThreatsSeaMonsters\\1.6\\Defs\\Incidents_Map_Threats.xml",
@@ -558,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "Incidents.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Incidents.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Incidents.xml",
@@ -570,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "Duties_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Anomaly\\Defs\\DutyDefs\\Duties_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Anomaly\\Defs\\DutyDefs\\Duties_Misc.xml",
@@ -582,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "Mutants.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Anomaly\\Defs\\Misc\\Mutants.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Anomaly\\Defs\\Misc\\Mutants.xml",
@@ -594,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Phasepasser.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\ThinkTreeDefs\\Phasepasser.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\ThinkTreeDefs\\Phasepasser.xml",
@@ -606,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "Jobs_Phasepasser.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Jobs\\Jobs_Phasepasser.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Jobs\\Jobs_Phasepasser.xml",
@@ -618,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "PawnKinds_Entities.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Anomaly\\Defs\\PawnKinds\\PawnKinds_Entities.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Anomaly\\Defs\\PawnKinds\\PawnKinds_Entities.xml",
@@ -630,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "Races_Entities_Misc.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Data\\Anomaly\\Defs\\ThingDefs_Races\\Races_Entities_Misc.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Data\\Anomaly\\Defs\\ThingDefs_Races\\Races_Entities_Misc.xml",
@@ -642,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Building_CollectionCase.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Building_CollectionCase.cs",
               "RelativeDocumentMoniker": "Building_CollectionCase.cs",
@@ -650,12 +746,11 @@
               "RelativeToolTip": "Building_CollectionCase.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAwwDkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T13:31:09.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T13:31:09.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "Quest_Collector.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Quest_Collector.cs",
               "RelativeDocumentMoniker": "Quest_Collector.cs",
@@ -667,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "LayoutWorker_CollectorLair.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\LayoutWorker_CollectorLair.cs",
               "RelativeDocumentMoniker": "LayoutWorker_CollectorLair.cs",
@@ -679,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "RoomContents.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\RoomContents.cs",
               "RelativeDocumentMoniker": "RoomContents.cs",
@@ -687,12 +782,11 @@
               "RelativeToolTip": "RoomContents.cs",
               "ViewState": "AgIAADkAAAAAAAAAAIAwwEYAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T13:29:54.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-14T13:29:54.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "Jobs_Collector.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Jobs\\Jobs_Collector.cs",
               "RelativeDocumentMoniker": "Jobs\\Jobs_Collector.cs",
@@ -704,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "SitePartWorkers.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\SitePartWorkers.cs",
               "RelativeDocumentMoniker": "SitePartWorkers.cs",
@@ -716,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "CompCollector.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\ThingComps\\CompCollector.cs",
               "RelativeDocumentMoniker": "ThingComps\\CompCollector.cs",
@@ -728,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "JobGivers.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Jobs\\JobGivers.cs",
               "RelativeDocumentMoniker": "Jobs\\JobGivers.cs",
@@ -740,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Abilities.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Abilities.cs",
               "RelativeDocumentMoniker": "Abilities.cs",
@@ -752,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "LayoutRoomDefs_CollectorLair.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Layouts\\LayoutRoomDefs_CollectorLair.xml",
@@ -764,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "Duties.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Duties.xml",
               "RelativeDocumentMoniker": "..\\..\\..\\NewAnomalyThreats\\1.6\\Defs\\Misc\\Duties.xml",
@@ -776,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "CollectorLairMapGenerator.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\CollectorLairMapGenerator.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\CollectorLairMapGenerator.xml",
@@ -788,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "CollectorLair.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\1.6\\Defs\\Sites\\CollectorLair.xml",
               "RelativeDocumentMoniker": "..\\..\\1.6\\Defs\\Sites\\CollectorLair.xml",
@@ -800,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "IncidentWorker_Misc.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\IncidentWorker_Misc.cs",
               "RelativeDocumentMoniker": "IncidentWorker_Misc.cs",
@@ -812,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "Jobs_Collector.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\Jobs_Collector.cs",
               "RelativeDocumentMoniker": "Jobs_Collector.cs",
@@ -824,15 +918,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
               "Title": "DefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\DefOf.cs",
               "RelativeDocumentMoniker": "DefOf.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\NewAnomalyThreatsHorrorsInTheDark\\Source\\NewAnomalyThreatsHorrorsInTheDark\\DefOf.cs",
               "RelativeToolTip": "DefOf.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwEMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T13:08:38.185Z"
+              "WhenOpened": "2026-01-14T13:08:38.185Z",
+              "EditorCaption": ""
             }
           ]
         }

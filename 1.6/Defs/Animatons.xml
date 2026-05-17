@@ -3,7 +3,7 @@
 
   <AnimationDef>
     <defName>NAT_Phasepasser</defName>
-    <durationTicks>6</durationTicks>
+    <durationTicks>10</durationTicks>
     <startOnRandomTick>true</startOnRandomTick>
     <keyframeParts>
       <li>
@@ -13,15 +13,28 @@
           <keyframes>
             <li>
               <tick>0</tick>
-              <offset>(-0.03,0,0.02)</offset>
+              <offset>(-0.05,0,0.05)</offset>
+              <angle>0</angle>
             </li>
             <li>
-              <tick>3</tick>
-              <offset>(0.03,0,-0.02)</offset>
+              <tick>5</tick>
+              <offset>(0.05,0,-0.05)</offset>
+              <angle>10</angle>
             </li>
             <li>
-              <tick>6</tick>
-              <offset>(-0.03,0,0.02)</offset>
+              <tick>10</tick>
+              <offset>(-0.05,0,0.05)</offset>
+              <angle>0</angle>
+            </li>
+            <li>
+              <tick>15</tick>
+              <offset>(0.05,0,-0.05)</offset>
+              <angle>-10</angle>
+            </li>
+            <li>
+              <tick>20</tick>
+              <offset>(-0.05,0,0.05)</offset>
+              <angle>0</angle>
             </li>
           </keyframes>
         </value>
@@ -33,15 +46,28 @@
           <keyframes>
             <li>
               <tick>0</tick>
-              <offset>(0.03,0,0.02)</offset>
+              <offset>(0.05,0,0.05)</offset>
+              <angle>0</angle>
             </li>
             <li>
-              <tick>3</tick>
-              <offset>(-0.03,0,-0.02)</offset>
+              <tick>5</tick>
+              <offset>(-0.05,0,-0.05)</offset>
+              <angle>-10</angle>
             </li>
             <li>
-              <tick>6</tick>
-              <offset>(0.03,0,0.02)</offset>
+              <tick>10</tick>
+              <offset>(0.05,0,0.05)</offset>
+              <angle>0</angle>
+            </li>
+            <li>
+              <tick>15</tick>
+              <offset>(-0.05,0,-0.05)</offset>
+              <angle>10</angle>
+            </li>
+            <li>
+              <tick>20</tick>
+              <offset>(0.05,0,0.05)</offset>
+              <angle>0</angle>
             </li>
           </keyframes>
         </value>

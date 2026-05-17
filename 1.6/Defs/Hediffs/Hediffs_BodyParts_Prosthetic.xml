@@ -6,19 +6,16 @@
   <!-- Revenant Vertebrae -->
   <HediffDef ParentName="ImplantHediffBase">
     <defName>NAT_PhasepassGland</defName>
-    <label>revenant vertebrae</label>
+    <label>phasepass gland</label>
     <description>An installed prosthetic that allows the user to temporarily become invisible. The prosthetic is crafted from a modified revenant spine, using archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
     <abilities>
       <li>NAT_PhaseTo</li>
     </abilities>
-    <addedPartProps>
-      <solid>true</solid>
-    </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>NAT_PhasepassGland</defName>
-    <label>revenant vertebrae</label>
+    <label>phasepass gland</label>
     <description>A prosthetic spine that allows the user to temporarily become invisible. The prosthetic is crafted from a modified revenant spine and uses archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
     <descriptionHyperlinks><RecipeDef>InstallRevenantVertebrae</RecipeDef></descriptionHyperlinks>
     <statBases>
@@ -42,7 +39,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <researchPrerequisite>RevenantInvisibility</researchPrerequisite>
+      <researchPrerequisite>NAT_PhasepassGland</researchPrerequisite>
       <recipeUsers>
         <li>BioferriteShaper</li>
       </recipeUsers>
@@ -50,15 +47,15 @@
     </recipeMaker>
   </ThingDef>
 
-  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>NAT_InstallPhasepassGland</defName>
-    <label>install revenant vertebrae</label>
-    <description>Install revenant vertebrae.</description>
+    <label>install phasepass gland</label>
+    <description>Install phasepass gland.</description>
     <descriptionHyperlinks>
       <ThingDef>NAT_PhasepassGland</ThingDef>
       <HediffDef>NAT_PhasepassGland</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing revenant vertebrae.</jobString>
+    <jobString>Installing phasepass gland.</jobString>
     <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
     <ingredients>
       <li>
@@ -83,13 +80,13 @@
 
 <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>NAT_RemovePhasepassGland</defName>
-    <label>remove coagulator</label>
-    <description>Remove coagulator.</description>
+    <label>remove phasepass gland</label>
+    <description>Remove phasepass gland.</description>
     <descriptionHyperlinks>
       <ThingDef>NAT_PhasepassGland</ThingDef>
       <HediffDef>NAT_PhasepassGland</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Removing coagulator.</jobString>
+    <jobString>Removing phasepass gland.</jobString>
     <removesHediff>NAT_PhasepassGland</removesHediff>
   </RecipeDef>
 </Defs>

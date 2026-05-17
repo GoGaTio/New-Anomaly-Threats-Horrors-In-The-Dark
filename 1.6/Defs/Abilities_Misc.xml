@@ -5,7 +5,8 @@
     <defName>NAT_CollectorHowl</defName>
     <label>collector howl</label>
     <description>Release a terrifying roar which will summon sightstealers neraby.</description>
-    <cooldownTicksRange>60000</cooldownTicksRange> <!-- 1 day -->
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <!-- 1 day -->
     <targetRequired>false</targetRequired>
     <aiCanUse>false</aiCanUse>
     <displayOrder>300</displayOrder>
@@ -34,7 +35,8 @@
       </li>
       <li Class="CompProperties_AbilityEffecterOnCaster">
         <effecterDef>NAT_CollectorHowl</effecterDef>
-        <maintainTicks>20</maintainTicks> <!-- Long enough for the "2nd wave" to spawn -->
+        <maintainTicks>20</maintainTicks>
+        <!-- Long enough for the "2nd wave" to spawn -->
       </li>
     </comps>
   </AbilityDef>
@@ -43,6 +45,7 @@
     <defName>NAT_PhaseTo</defName>
     <label>phasepass</label>
     <description>Release a terrifying roar which will summon sightstealers neraby.</description>
+    <iconPath>UI/Abilities/NAT_Phasepass</iconPath>
     <cooldownTicksRange>2500</cooldownTicksRange>
     <targetRequired>true</targetRequired>
     <aiCanUse>false</aiCanUse>
@@ -56,7 +59,7 @@
       <drawAimPie>true</drawAimPie>
       <requireLineOfSight>false</requireLineOfSight>
       <violent>false</violent>
-      <range>15.9</range>
+      <range>19.9</range>
       <targetable>true</targetable>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
@@ -69,13 +72,13 @@
     </comps>
   </AbilityDef>
 
-<AbilityDef ParentName="NAT_PhaseToBase">
+  <AbilityDef ParentName="NAT_PhaseToBase">
     <defName>NAT_PhaseTo_Creepjoiner</defName>
     <description>Release a terrifying roar which will summon sightstealers neraby.</description>
     <charges>3</charges>
     <cooldownPerCharge>true</cooldownPerCharge>
     <verbProperties>
-      <range>9.9</range>
+      <range>12.9</range>
     </verbProperties>
   </AbilityDef>
 

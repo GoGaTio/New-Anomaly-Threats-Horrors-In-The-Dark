@@ -63,5 +63,8 @@ namespace NAT
 
 		public static DamageDef NAT_Distortion;
 
+		public static EffecterDef NAT_FlyingFlare;
+
+		public static SoundDef NAT_FlareLaunch;
 	}
 }

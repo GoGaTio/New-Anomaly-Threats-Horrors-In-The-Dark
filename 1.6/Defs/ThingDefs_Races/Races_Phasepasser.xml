@@ -67,15 +67,11 @@
     </race>
     <comps>
       <li Class="NAT.CompProperties_Phasepasser">
-        <attackCooldown>25</attackCooldown>
-        <damageRange>3~6</damageRange>
+        <attackCooldown>90</attackCooldown>
+        <damageRange>5~6</damageRange>
         <armorPenetrationRange>0.5~1</armorPenetrationRange>
-        <beamMote>NAT_Mote_PhasepasserBeam</beamMote>
+        <attackEffecter></attackEffecter>
         <headAngleRange>-30~30</headAngleRange>
-        <beamPointNorth>(0, 0, 0.55)</beamPointNorth>
-        <beamPointEast>(0.2, 0, 0.55)</beamPointEast>
-        <beamPointSouth>(0, 0, 0.55)</beamPointSouth>
-        <beamPointWest>(-0.2, 0, 0.55)</beamPointWest>
       </li>
       <li Class="CompProperties_HoldingPlatformTarget">
         <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>

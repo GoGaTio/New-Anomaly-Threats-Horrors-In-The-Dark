@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>NAT_FlareLaunch</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>NAT_FlareLaunch</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.9~1.1</pitchRange>
+        <volumeRange>18~24</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

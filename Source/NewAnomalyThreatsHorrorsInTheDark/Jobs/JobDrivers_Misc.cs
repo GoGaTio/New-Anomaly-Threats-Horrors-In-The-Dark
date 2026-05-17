@@ -93,6 +93,10 @@ namespace NAT
 				{
 					pawn.Drawer.renderer.SetAnimation(NATHDDefOf.NAT_Phasepasser);
 				}
+				if(toil.actor.stances != null && (toil.actor.stances.stunner?.Stunned == true || toil.actor.stances.curStance is Stance_Cooldown))
+				{
+					return;
+				}
 				if (movingCostLeft > 0f)
 				{
 					movingCostLeft -= CostToMoveThisTick(toil.actor);
@@ -171,7 +175,7 @@ namespace NAT
 			return num3;
 		}
 
-		protected virtual float MoveSpeed(Pawn p) => p.GetStatValue(StatDefOf.MoveSpeed);
+		protected virtual float MoveSpeed(Pawn p) => 6f;
 
 		protected virtual void TryEnterNextPathCell(Pawn pawn)
 		{
@@ -228,6 +232,19 @@ namespace NAT
 
 	public class JobDriver_PhasepasserAttack : JobDriver_MoveIgnoreAnything
 	{
+		private static readonly SimpleCurve SpeedCurve = new SimpleCurve
+		{
+			new CurvePoint(180f, 9f),
+			new CurvePoint(300f, 12f),
+			new CurvePoint(900f, 15f),
+			new CurvePoint(2500f, 18f)
+		};
+
+		protected override float MoveSpeed(Pawn p)
+		{
+			return SpeedCurve.Evaluate(p.GetComp<CompPhasepasser>().ticksSinceLastAttack);
+		}
+
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
 			foreach(Toil toil in base.MakeNewToils())
@@ -253,7 +270,6 @@ namespace NAT
 			attack.initAction = delegate
 			{
 				attack.actor.GetComp<CompPhasepasser>().Detect();
-				DisablePather(true);
 			};
 			attack.tickAction = delegate
 			{
@@ -269,9 +285,7 @@ namespace NAT
 					Thing thing = t.SpawnedParentOrMe;
 					if(thing != null)
 					{
-						DisablePather(false);
 						attack.actor.jobs?.curJob.SetTarget(TargetIndex.A, thing);
-						DisablePather(true);
 						return;
 					}
 					else
@@ -283,14 +297,8 @@ namespace NAT
 				if (!attack.actor.GetComp<CompPhasepasser>().KeepAttackTick(t))
 				{
 					attack.actor.jobs?.curDriver?.ReadyForNextToil();
-					DisablePather(false);
 				}
 			};
-			attack.AddFinishAction(delegate
-			{
-				DisablePather(false);
-				attack?.actor?.GetComp<CompPhasepasser>()?.RemoveMote();
-			});
 			attack.defaultCompleteMode = ToilCompleteMode.Never;
 			yield return attack;
 		}
@@ -298,7 +306,7 @@ namespace NAT
 		protected override void TryEnterNextPathCell(Pawn pawn)
 		{
 			base.TryEnterNextPathCell(pawn);
-			if(Target.Cell != pawn.Position && pawn.Position.DistanceTo(Target.Cell) <= 7 && GenSight.LineOfSight(pawn.Position, Target.Cell, pawn.Map, false))
+			if(Target.Cell != pawn.Position && pawn.Position.DistanceTo(Target.Cell) <= 1.5f)
 			{
 				pawn.jobs.curDriver.ReadyForNextToil();
 			}
@@ -333,14 +341,6 @@ namespace NAT
 				return false;
 			}
 			return true;
-		}
-
-		private void DisablePather(bool flag)
-		{
-			if(job != null && Target.Pawn?.pather != null)
-			{
-				Target.Pawn.pather.debugDisabled = flag;
-			}
 		}
 	}
 

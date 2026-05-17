@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef>
+    <defName>NAT_FlyingFlare</defName>
+    <label>flying flare</label>
+    <thingClass>NAT.FlyingFlare</thingClass>
+    <selectable>false</selectable>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <drawerType>None</drawerType>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <useHitPoints>false</useHitPoints>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>30</glowRadius>
+        <glowColor>(255,220,220,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <EffecterDef>
+    <defName>NAT_FlyingFlare</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>Smoke</fleckDef>
+        <chancePerTick>0.1</chancePerTick>
+        <scale>0.6~1.1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <angle>30~70</angle>
+        <speed>3~4</speed>
+        <angle>175~185</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <lifespanMaxTicks>10</lifespanMaxTicks>
+        <color>(0.5, 0.2, 0.2)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>Smoke</fleckDef>
+        <chancePerTick>0.1</chancePerTick>
+        <scale>0.6~1.1</scale>
+        <spawnLocType>OnSource</spawnLocType>
+        <angle>30~70</angle>
+        <speed>3~4</speed>
+        <angle>175~185</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.2</positionRadius>
+        <moteDef>NAT_Mote_FlareSpark</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <chancePerTick>0.9</chancePerTick>
+        <color>(1, 0.9, 0.9)</color>
+        <speed>3.3~5</speed>
+        <scale>0.5~1</scale>
+        <angle>90~270</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.2</positionRadius>
+        <moteDef>NAT_Mote_FlareSpark</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <chancePerTick>0.9</chancePerTick>
+        <color>(1, 0.9, 0.9)</color>
+        <speed>3.3~5</speed>
+        <scale>1.5~3</scale>
+        <angle>0~360</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <moteDef>NAT_Mote_FlareSpark</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <chancePerTick>0.9</chancePerTick>
+        <color>(1, 0.9, 0.9)</color>
+        <speed>3.3~5</speed>
+        <scale>1~2</scale>
+        <angle>0~360</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>NAT_Mote_FlareSpark</defName>
+    <graphicData>
+      <texPath>Things/Mote/SparkThrown</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>VisEffects</altitudeLayer>
+    <mote>
+      <fadeInTime>0.03</fadeInTime>
+      <solidTime>0.04</solidTime>
+      <fadeOutTime>0.13</fadeOutTime>
+      <collide>true</collide>
+    </mote>
+  </ThingDef>
+  
+</Defs>
