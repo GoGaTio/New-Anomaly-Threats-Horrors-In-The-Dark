@@ -14,27 +14,14 @@
             <li>
               <tick>0</tick>
               <offset>(-0.05,0,0.05)</offset>
-              <angle>0</angle>
             </li>
             <li>
               <tick>5</tick>
               <offset>(0.05,0,-0.05)</offset>
-              <angle>10</angle>
             </li>
             <li>
               <tick>10</tick>
               <offset>(-0.05,0,0.05)</offset>
-              <angle>0</angle>
-            </li>
-            <li>
-              <tick>15</tick>
-              <offset>(0.05,0,-0.05)</offset>
-              <angle>-10</angle>
-            </li>
-            <li>
-              <tick>20</tick>
-              <offset>(-0.05,0,0.05)</offset>
-              <angle>0</angle>
             </li>
           </keyframes>
         </value>
@@ -47,27 +34,14 @@
             <li>
               <tick>0</tick>
               <offset>(0.05,0,0.05)</offset>
-              <angle>0</angle>
             </li>
             <li>
               <tick>5</tick>
               <offset>(-0.05,0,-0.05)</offset>
-              <angle>-10</angle>
             </li>
             <li>
               <tick>10</tick>
               <offset>(0.05,0,0.05)</offset>
-              <angle>0</angle>
-            </li>
-            <li>
-              <tick>15</tick>
-              <offset>(-0.05,0,-0.05)</offset>
-              <angle>10</angle>
-            </li>
-            <li>
-              <tick>20</tick>
-              <offset>(0.05,0,0.05)</offset>
-              <angle>0</angle>
             </li>
           </keyframes>
         </value>

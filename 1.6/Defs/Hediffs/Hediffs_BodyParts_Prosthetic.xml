@@ -1,32 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- Misc -->
-
-  <!-- Revenant Vertebrae -->
-  <HediffDef ParentName="ImplantHediffBase">
+  <HediffDef ParentName="AddedBodyPartBase">
     <defName>NAT_PhasepassGland</defName>
     <label>phasepass gland</label>
-    <description>An installed prosthetic that allows the user to temporarily become invisible. The prosthetic is crafted from a modified revenant spine, using archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
-    <abilities>
-      <li>NAT_PhaseTo</li>
-    </abilities>
+    <description>A modified human kidney reconfigured to heat the blood of a ghoul, allowing survival in extremely cold environments.</description>
+    <spawnThingOnRemoved>NAT_PhasepassGland</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>0.95</partEfficiency>
+    </addedPartProps>
+    <comps>
+      <li Class="NAT.HediffCompProperties_GiveAbilityCharges">
+        <abilityDefs>
+          <li>NAT_PhaseTo</li>
+        </abilityDefs>
+      </li>
+    </comps>
   </HediffDef>
 
   <ThingDef ParentName="BodyPartBionicBase">
     <defName>NAT_PhasepassGland</defName>
     <label>phasepass gland</label>
-    <description>A prosthetic spine that allows the user to temporarily become invisible. The prosthetic is crafted from a modified revenant spine and uses archotech shards to restrain the dormant revenant. The user can manipulate the visual centers of those nearby, effectively turning themself invisible for a short time.</description>
-    <descriptionHyperlinks><RecipeDef>InstallRevenantVertebrae</RecipeDef></descriptionHyperlinks>
+    <description>A special bioferrite prosthetic that actively heats a ghoul's blood, allowing it to survive in cold environments. The prosthetic replaces a ghoul's kidney, heating the blood as it passes through.\n\nDue to the extremely painful nature of the prosthetic, only ghouls can tolerate this enhancement.</description>
+    <descriptionHyperlinks>
+      <RecipeDef>NAT_InstallPhasepassGland</RecipeDef>
+    </descriptionHyperlinks>
     <statBases>
       <Mass>0.3</Mass>
       <WorkToMake>24000</WorkToMake>
     </statBases>
-    <techHediffsTags Inherit="False">
-    </techHediffsTags>
+    <techHediffsTags Inherit="False"/>
     <costList>
-      <Bioferrite>10</Bioferrite>
-      <Shard>2</Shard>
+      <Bioferrite>50</Bioferrite>
+      <Shard>1</Shard>
       <RevenantSpine>1</RevenantSpine>
     </costList>
     <tradeTags Inherit="false" />
@@ -52,11 +59,12 @@
     <label>install phasepass gland</label>
     <description>Install phasepass gland.</description>
     <descriptionHyperlinks>
-      <ThingDef>NAT_PhasepassGland</ThingDef>
-      <HediffDef>NAT_PhasepassGland</HediffDef>
+      <ThingDef>BloodWarmer</ThingDef>
+      <HediffDef>BloodWarmer</HediffDef>
     </descriptionHyperlinks>
     <jobString>Installing phasepass gland.</jobString>
-    <surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+    <anesthetize>true</anesthetize>
+    <surgeryOutcomeEffect IsNull="True" />
     <ingredients>
       <li>
         <filter>
@@ -73,20 +81,9 @@
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Torso</li>
+      <li>Kidney</li>
     </appliedOnFixedBodyParts>
     <addsHediff>NAT_PhasepassGland</addsHediff>
   </RecipeDef>
-
-<RecipeDef ParentName="SurgeryRemoveImplantBase">
-    <defName>NAT_RemovePhasepassGland</defName>
-    <label>remove phasepass gland</label>
-    <description>Remove phasepass gland.</description>
-    <descriptionHyperlinks>
-      <ThingDef>NAT_PhasepassGland</ThingDef>
-      <HediffDef>NAT_PhasepassGland</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Removing phasepass gland.</jobString>
-    <removesHediff>NAT_PhasepassGland</removesHediff>
-  </RecipeDef>
+  
 </Defs>

@@ -54,6 +54,8 @@
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <charges>1</charges>
+    <cooldownPerCharge>true</cooldownPerCharge>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <drawAimPie>true</drawAimPie>
@@ -76,9 +78,8 @@
     <defName>NAT_PhaseTo_Creepjoiner</defName>
     <description>Release a terrifying roar which will summon sightstealers neraby.</description>
     <charges>3</charges>
-    <cooldownPerCharge>true</cooldownPerCharge>
     <verbProperties>
-      <range>12.9</range>
+      <range>14.9</range>
     </verbProperties>
   </AbilityDef>
 
